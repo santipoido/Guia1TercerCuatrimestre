@@ -8,7 +8,7 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         RepositorioPagos rp = new RepositorioPagos<>("PagoFacil");
-        TarjetaCredito tc = new TarjetaCredito("CD123", LocalDate.now(), 20000,11111111, 333, 12, 28, "Santiago", "Banco Nacion");
+        TarjetaCredito tc = new TarjetaCredito("CD123", LocalDate.now(), 20000,11111111, 333, 12, 28, "Santiago", "Banco Nacion"); //modificar el tipo de dato para poder ingresar el número de tarjeta
         Efectivo ef = new Efectivo("EF333", LocalDate.now(), 100000, "Pesos Argentinos");
         Paypal pp = new Paypal("PP223", LocalDate.now(), 150000, "test2005@gmail.com");
         System.out.println(rp.agregar(tc));
